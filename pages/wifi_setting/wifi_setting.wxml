@@ -1,0 +1,14 @@
+<!--pages/wifi_setting/wifi_setting.wxml-->
+<view class='wifibox'>
+  <view>
+   <!--<text>配网WIFI名称:</text>-->
+   <!--<text>{{wifi_name}}</text>-->
+    <input type="text" placeholder="输入WIFI名称" bindinput="wifi_name" value="{{wifi_name}}"></input>
+  </view>
+  <view class='flex'>
+    <!-- <text>配网WIFI密码:</text> -->
+    <input type="text" placeholder="输入WIFI密码" bindinput="wifi_pwd" value="{{wifi_pwd}}"></input>
+  </view>
+</view>
+<button bindtap="contectedwifi" class="weui-btn GetWifi" type="default">点击配网</button>
+<mp-toptips msg="{{msg}}" type="{{MsgType}}" show="{{msg}}"></mp-toptips>

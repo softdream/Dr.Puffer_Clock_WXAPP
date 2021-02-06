@@ -1,0 +1,47 @@
+.croper-wrapper{
+  margin-top:20px;
+  position: relative;
+}
+
+.cropper{
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  margin:auto;
+  width:135px;
+  height: 240px;
+}
+
+button{
+  width:80%;
+  color:#fff;
+  background-color:#3CC51F;
+  margin-top: 20px;
+}
+
+.default{
+  color:#3CC51F;
+  background-color: #e5e5e5;
+  border: 1px solid #3CC51F;
+}
+
+.checkboxgroup{
+  margin-left:-14%;
+}
+
+.parameter-info{
+  padding:6px 16px;
+  font-size:14px;
+  line-height: 1.5285714;
+ 
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  display: inline-block;
+  width:168rpx;
+  height:39rpx;
+  margin-top: 26rpx;
+  margin-left:150rpx;
+}
+
+.checked_parameter{
+  color:#eea236;
+}

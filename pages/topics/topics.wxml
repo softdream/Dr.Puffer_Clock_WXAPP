@@ -1,0 +1,51 @@
+<!--pages/topics/topics.wxml-->
+<view>
+  <view class = 'title'>
+    <image src="../../images/Helmet_characters.png" style="width:93.1vw;height:8vw;"></image>
+    <text>设置显示主题</text>
+  </view>
+  <view>
+    <swiper indicator-dots='true' indicator-color='red' indicator-active-color='yellow' autoplay="false" circular="true" previous-margin="10px" next-margin="10px">
+      <swiper-item>
+        <image src='../../images/0.png' style="width:80%;height:60%" bindtap="showModal1"></image>
+        <button class="button1" bindtap="buttonClick1">立即切换</button>
+        <view>
+          <modal title="显示效果" hidden="{{modalHidden}}" confirm-text="确定" no-cancel="true" bindconfirm="closeModal1" style="width:100%">
+            <view style="width:100%">
+              <image src="../../images/inspiration.png"></image>
+            </view>
+          </modal>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <image src='../../images/fire.png' style="width:80%;height:60%" bindtap="showModal1"></image>
+        <button class="button2" bindtap="buttonClick2">立即切换</button>
+        <view>
+          <modal title="显示效果" hidden="{{modalHidden}}" confirm-text="确定" no-cancel="true" bindconfirm="closeModal1">
+            <text>弹窗2</text>
+          </modal>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <image src='../../images/iron.png' style="width:80%;height:60%" bindtap="showModal1"></image>
+        <button class="button3" bindtap="buttonClick3">立即切换</button>
+        <view>
+          <modal title="显示效果" hidden="{{modalHidden}}" confirm-text="确定" no-cancel="true" bindconfirm="closeModal1">
+            <text>弹窗3</text>
+          </modal>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <image src='../../images/blue.png' style="width:80%;height:60%" bindtap="showModal1"></image>
+        <button class="button4" bindtap="buttonClick4">立即切换</button>
+        <view>
+          <modal title="显示效果" hidden="{{modalHidden}}" confirm-text="确定" no-cancel="true" bindconfirm="closeModal1">
+            <text>弹窗4</text>
+          </modal>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+
+

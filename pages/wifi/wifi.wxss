@@ -1,0 +1,12 @@
+/* pages/wifi/wifi.wxss */
+.first_ipt{
+  width: 500rpx;
+  height: 100rpx;
+  border: 1rpx solid #f4f4f4;
+  margin: 50% auto 50rpx;
+  text-align: center;
+}
+.login_btn{
+  width: 600rpx!important;
+  font-size: 18px;
+}

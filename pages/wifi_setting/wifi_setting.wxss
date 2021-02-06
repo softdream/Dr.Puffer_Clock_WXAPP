@@ -1,0 +1,23 @@
+/* pages/wifi_setting/wifi_setting.wxss */
+.GetWifi{
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+.flex{
+  display: flex;
+}
+.wifibox{
+  width: 600rpx;
+  margin: 50% auto 0;
+}
+.wifibox view{
+  padding: 20rpx 20rpx;
+  border: 1px solid #f4f4f4;
+  border-radius: 10rpx;
+}
+.wifibox view:nth-child(1){
+  margin-bottom: 20rpx;
+}
+.wifibox view:nth-child(2){
+  align-items: center;
+}

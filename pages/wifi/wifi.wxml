@@ -1,0 +1,5 @@
+<input type="text" placeholder="请输入登录密码" class='first_ipt' bindinput="login_pwd" value="{{login_pwd}}"></input>
+
+<button type="default" bindtap="login" class='login_btn'>请确保已经连接时钟Wifi热点</button>
+
+<mp-toptips msg="{{msg}}" type="{{MsgType}}" show="{{msg}}"></mp-toptips>

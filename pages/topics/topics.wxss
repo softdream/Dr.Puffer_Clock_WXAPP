@@ -1,0 +1,44 @@
+/* pages/topics/topics.wxss */
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 40rpx;
+  color: red;
+}
+
+swiper{
+  position: absolute;
+  width: 100%;
+  height:85%;
+}
+swiper image{
+  position: relative;
+ 
+  margin-top:15%;
+  margin-left:10%;
+  width: 100%;
+  height: 100%;
+}
+.button1{
+  position: absolute;
+  bottom: 15%;
+  left:26%;
+}
+.button2{
+  position: absolute;
+  bottom: 15%;
+  left:26%;
+}
+.button3{
+  position: absolute;
+  bottom: 15%;
+  left:26%;
+}
+.button4{
+  position: absolute;
+  bottom: 15%;
+  left:26%;
+}

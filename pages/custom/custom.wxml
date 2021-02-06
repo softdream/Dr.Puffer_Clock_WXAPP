@@ -1,0 +1,17 @@
+<view style="align-items: center; margin-left:3vw; margin-top:2vw; ">
+  <image src="../../images/Helmet_characters.png" style="width:93.1vw;height:8vw;"></image>
+  <text style="color:red; margin-left:20vw; font-size:24">自定义设置屏幕显示图片</text>
+  <view class="checkboxgroup">
+    <block wx:for="{{parameter}}" wx:key="parameter">
+      <text class='parameter-info text-over {{item.checked?"checked_parameter":""}}' data-id='{{item.name}}' bindtap="parameterTap">{{item.value}}</text>
+    </block>
+  </view>
+</view>
+
+<view class="croper-wrapper">
+  <canvas class="cropper" disable-scroll="true" bindtouchstart="uploadScaleStart" bindtouchmove="uploadScaleMove" bindtouchend="uploadScaleEnd" style="width:{{width}}rpx;height:{{height}}rpx;" canvas-id="cropper">
+  </canvas>
+</view>
+<button bindtap="chooseImg" class="default">选择图片</button>
+<button bindtap="getCropperImage">生成图片</button>
+<button bindtap="setPic">设置显示</button>
