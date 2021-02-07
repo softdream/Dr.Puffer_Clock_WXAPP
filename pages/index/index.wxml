@@ -1,13 +1,15 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<!--pages/mdns/mdns.wxml-->
+<button bindtap='startDiscovery'>开始搜索</button>
+<button bindtap='stopDiscovery'>停止搜索</button>
+<view class='mdns_list'>
+    <view wx:for="{{lists}}" wx:key="{{index}}" data-id='{{index}}' class='row' bindtap='itemOnclick'>
+        <text class='serverName'>设备服务名：{{item.serviceName}}</text>
+        <text class='ip'>ip地址：{{item.ip}}:{{item.port}}</text>
+        <text class='serviceType'>服务类型：{{item.serviceType}}</text>
+    </view>
+</view>
+
+<view>=====================================</view>
+<view>
+  <text class='receiveMessage'>收到来自{{fromIp}}的回复：{{receiveMessage}}</text>
 </view>

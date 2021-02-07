@@ -1,4 +1,6 @@
 // pages/topics/topics.js
+const app = getApp();
+
 Page({
 
   /**
@@ -7,41 +9,51 @@ Page({
   data: {
     modalHidden:true,
 
+    msg:'',
+    MsgType:'',
+
+    udp:'',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log("页面加载完成");
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    console.log("页面渲染完成");
+    // 新建udp实例
+    this.udp = wx.createUDPSocket();
 
+    // udp绑定本机
+    this.udp.bind();
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log( "页面显示" );
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    console.log("页面隐藏");
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    console.log("页面卸载");
   },
 
   /**
@@ -67,6 +79,14 @@ Page({
 
   buttonClick1:function(e){
     console.log( "button1" );
+
+    this.udp.send({
+      address:'192.168.0.193',
+      //address:'255.255.255.255',
+      port:'2333',
+      message:"hello word!"
+    });
+    console.log( "send data" );
   },
 
   buttonClick2:function(e){

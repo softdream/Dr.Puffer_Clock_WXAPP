@@ -17,6 +17,21 @@
      </view>
     </view>
 
+    <!-- -----------------------------------  -->
+    <view class="item"style="">
+      <view style=" width:12vw;display: flex;  align-items: center;  justify-content: center;">
+      <image src="../../images/place.png" style="width:8vw;height:8vw "></image>
+      </view>
+
+      <view style=" width:30vw;">显示模式:</view>
+
+      <view style=" width:48vw; display: flex;flex-direction:row-reverse;align-items: center;" bindtap=" ">
+        <image src="../../images/goto.png" style="width:4vw;height:6vw "></image>
+        <text style="margin-right:2vw">时钟模式</text>
+      </view>
+    </view>
+
+    <!-- -----------------------------------  -->
     <view class="item"style="">
       <view style=" width:12vw;display: flex;  align-items: center;  justify-content: center;">
       <image src="../../images/place.png" style="width:8vw;height:8vw "></image>
@@ -30,6 +45,7 @@
       </view>
     </view>
 
+    <!-- -----------------------------------  -->
     <view class="item"style="">
       <view style=" width:12vw;display: flex;  align-items: center;  justify-content: center;">
         <image src="../../images/place.png" style="width:8vw;height:8vw "></image>
@@ -41,6 +57,9 @@
       </view>
     </view>
 
+    
+
+    <!-- -----------------------------------  -->
     <view class="item"style="">
       <view style=" width:12vw;display: flex;  align-items: center;  justify-content: center;">
         <image src="../../images/place.png" style="width:8vw;height:8vw "></image>
@@ -52,6 +71,7 @@
       </view>
     </view>
 
+    <!-- -----------------------------------  -->
     <view class="item"style="">
       <view style=" width:12vw;display: flex;  align-items: center;  justify-content: center;">
         <image src="../../images/spec.png" style="width:8vw;height:8vw "></image>

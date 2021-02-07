@@ -1,9 +1,9 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/topics/topics",
     "pages/custom/custom",
     "pages/setting/setting",
-    "pages/index/index",
     "pages/logs/logs",
     "pages/wifi/wifi",
     "pages/wifi_setting/wifi_setting"
@@ -19,12 +19,17 @@
     "selectedColor": "#13b11c",
     "backgroundColor": "#1f1f4f",
     "list": [
-      
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my2.png",
+        "text": "我的设备"
+      },
       {
         "pagePath": "pages/topics/topics",
         "iconPath": "images/topic.png",
         "selectedIconPath": "images/topic2.png",
-        "text": "主题"
+        "text": "本地主题"
       },
       {
         "pagePath": "pages/custom/custom",
@@ -36,14 +41,9 @@
         "pagePath": "pages/setting/setting",
         "iconPath": "images/set.png",
         "selectedIconPath": "images/set2.png",
-        "text": "配置"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "iconPath": "images/my.png",
-        "selectedIconPath": "images/my2.png",
-        "text": "个人中心"
+        "text": "时钟配置"
       }
+      
     ]
   },
   "style": "v2",
